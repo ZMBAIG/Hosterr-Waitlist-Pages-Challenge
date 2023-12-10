@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  width: 80vw;
+  margin: auto;
+  background-color: antiquewhite;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  padding: 1.5rem 0;
+}
+
+header .hosterr-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header .btn-hosterr {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(238, 204, 182, 0.9922093837535014) 0%,
+    rgba(240, 50, 92, 1) 79%
+  );
+  color: #fff;
+  border: none;
+  padding: 0.25rem 0.85rem;
+  border-radius: 2rem;
+  font-size: 0.65em;
+}
+
+header .flex-nav-bar {
+  display: flex;
+  gap: 1rem;
+}
+header .flex-nav-bar a:hover,
+footer ul li a:hover {
+  cursor: pointer;
+  border-bottom: 2.5px solid purple;
+}
+header .flex-nav-bar a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: gray;
+}
+
+header .join-waitlist {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+header a,
+footer ul li a {
+  text-decoration: none;
+  color: gray;
+}
+.btn-join-waitlist {
+  display: flex;
+  background-color: dodgerblue;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+}
+.btn-join-waitlist:hover {
+  background-color: purple;
+  cursor: pointer;
+  color: white;
+}
+
+/* ===========================Host your website in less than 5 minutes.============= */
+
+main .host-website {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 4rem 0;
+  height: 75vh;
+}
+.sub-host-website {
+  display: flex;
+  flex-direction: column;
+}
+.sub-host-website h1 {
+  font-size: 3rem;
+}
+.host-website-text,
+.no-spam-text {
+  color: gray;
+}
+.no-spam-text {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.sub-host-website > p {
+  padding: 1rem 4rem 2rem 0;
+}
+.sub-host-website form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input[type="email"] {
+  width: 60%;
+  padding-left: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid gray;
+  background-color: white;
+}
+.website-hero-images {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 60vh;
+}
+.website-hero-images img {
+  display: block;
+  max-width: 100%;
+}
+
+.website-hero-images img:nth-child(1) {
+  position: relative;
+  z-index: 1;
+  height: 330px;
+}
+.website-hero-images img:nth-child(2) {
+  position: relative;
+  right: -19.5rem;
+  top: -1rem;
+  z-index: -1;
+  transform: rotateX(55deg);
+  height: 375px;
+}
+
+.website-hero-images img:nth-child(3) {
+  position: relative;
+  right: -39rem;
+  top: -1.5rem;
+  z-index: -2;
+  transform: rotateX(55deg);
+  height: 375px;
+}
+.website-hero-images img:nth-child(4) {
+  position: relative;
+  top: -2rem;
+  right: -58.5rem;
+  z-index: -3;
+  transform: rotateX(55deg);
+  height: 375px;
+}
+
+/* ===========================Footer.============= */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer ul {
+  display: flex;
+  gap: 4rem;
+}
+footer ul li {
+  list-style: none;
+}
+.talk-to-specialist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+}
+.talk-to-specialist img {
+  width: 20%;
+}
